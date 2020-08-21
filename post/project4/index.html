@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Hope Herr-Cardillo (they/them)">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://hopehc.github.io/portfolio//img/abstractdesert.jpg">
+    <meta property="twitter:image" content="https://hopehc.github.io/portfolio//img/abstractdesert.jpg" />
+    
+
+    
+    <meta name="title" content="Project 4: Automatically Create Personal Calendar Event (Simon &amp; Schuster)" />
+    <meta property="og:title" content="Project 4: Automatically Create Personal Calendar Event (Simon &amp; Schuster)" />
+    <meta property="twitter:title" content="Project 4: Automatically Create Personal Calendar Event (Simon &amp; Schuster)" />
+    
+
+    
+    <meta name="description" content="Data Science Portfolio">
+    <meta property="og:description" content="Data Science Portfolio" />
+    <meta property="twitter:description" content="Data Science Portfolio" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Hope, Herr, Cardillo, Data, Science, Portfolio">
+    <link rel="shortcut icon" href="https://hopehc.github.io/portfolio/img/favicon.ico">
+
+    <title>Project 4: Automatically Create Personal Calendar Event (Simon &amp; Schuster)-Hope Herr-Cardillo Portfolio</title>
+
+    <link rel="canonical" href="https://hopehc.github.io/portfolio/post/project4/">
+
+    <link rel="stylesheet" href="https://hopehc.github.io/portfolio/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="https://hopehc.github.io/portfolio/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="https://hopehc.github.io/portfolio/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="https://hopehc.github.io/portfolio/css/zanshang.css">
+    
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="https://hopehc.github.io/portfolio/js/jquery.min.js"></script>
+    
+    
+    <script src="https://hopehc.github.io/portfolio/js/bootstrap.min.js"></script>
+    
+    
+    <script src="https://hopehc.github.io/portfolio/js/hux-blog.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://hopehc.github.io/portfolio/">Hope Herr-Cardillo (they/them)</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://hopehc.github.io/portfolio/">Home</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="https://hopehc.github.io/portfolio/categories/projects">projects</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="https://hopehc.github.io/portfolio/top/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="https://hopehc.github.io/portfolio/search">SEARCH <img src="https://hopehc.github.io/portfolio/img/search.png" height="15" style="cursor: pointer;" alt="Search"></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/pricklypear.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="https://hopehc.github.io/portfolio/tags/google-sheets" title="Google Sheets">
+                            Google Sheets
+                        </a>
+                        
+                        <a class="tag" href="https://hopehc.github.io/portfolio/tags/google-scripts" title="Google Scripts">
+                            Google Scripts
+                        </a>
+                        
+                        <a class="tag" href="https://hopehc.github.io/portfolio/tags/data-cleanup" title="Data Cleanup">
+                            Data Cleanup
+                        </a>
+                        
+                        <a class="tag" href="https://hopehc.github.io/portfolio/tags/data-migration" title="Data Migration">
+                            Data Migration
+                        </a>
+                        
+                        <a class="tag" href="https://hopehc.github.io/portfolio/tags/efficiency-tools" title="Efficiency Tools">
+                            Efficiency Tools
+                        </a>
+                        
+                    </div>
+                    <h1>Project 4: Automatically Create Personal Calendar Event (Simon &amp; Schuster)</h1>
+                    <h2 class="subheading">Google Script</h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                            Hope Herr-Cardillo
+                         
+                        on 
+                        Thursday, August 20, 2020
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#documentation">Documentation</a>
+      <ul>
+        <li><a href="#link-to-personal-calendar">Link to personal calendar</a></li>
+        <li><a href="#check-status">Check status</a></li>
+        <li><a href="#verify-and-complete">Verify and complete</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                <p>
+  <img src="https://hopehc.github.io/portfolio/project4/calendar.png" alt="Personal calendar with various events assigned.">
+
+</p>
+<h1 id="project-4-automatically-create-personal-calendar-event-simon--schuster">Project 4: Automatically Create Personal Calendar Event (Simon &amp; Schuster)</h1>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>Efficiency tool developed to reduce redundant work</li>
+<li>Automatically creates all-day events based off of group project management sheet</li>
+<li>Color coded according to department standards</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<h3 id="link-to-personal-calendar">Link to personal calendar</h3>
+<ul>
+<li>To get started, send me your personal S&amp;S Google Calendar ID.</li>
+<li>Click on the three dots next to your S&amp;S Calendar, select &ldquo;Settings and sharing.&rdquo;</li>
+</ul>
+<p>
+  <img src="https://hopehc.github.io/portfolio/project4/CalendarSetup.png" alt="Overview of spreadsheet.">
+
+</p>
+<ul>
+<li>Scroll down until you see the &ldquo;Integrate calendar&rdquo; heading. Directly under it will be your calendar ID.</li>
+</ul>
+<p>
+  <img src="https://hopehc.github.io/portfolio/project4/CalendarSetup2.png" alt="Overview of spreadsheet.">
+
+</p>
+<ul>
+<li>If the user <strong>has not</strong> sent me their personal calendar ID, they will see this message when they attempt to create a calendar event. If the user <strong>has</strong> sent me their personal calendar ID, check to make sure the DESKTOP field contains your initials (only) with no spaces after.</li>
+</ul>
+<p>
+  <img src="https://hopehc.github.io/portfolio/project4/calerror1.png" alt="Calendar connection does not exist.">
+
+</p>
+<h3 id="check-status">Check status</h3>
+<ul>
+<li>If the STATUS field is not set to DUE, the user will receive this message.</li>
+</ul>
+<p>
+  <img src="https://hopehc.github.io/portfolio/project4/calerror2.png" alt="Overview of spreadsheet.">
+
+</p>
+<h3 id="verify-and-complete">Verify and complete</h3>
+<ul>
+<li>If everything goes well an alert will appear, giving the user a chance to double-check that they&rsquo;ve selected the correct title and inputted the proper due date.</li>
+</ul>
+<p>
+  <img src="https://hopehc.github.io/portfolio/project4/addtocal.png" alt="Popup: Add event to calendar.">
+
+</p>
+<ul>
+<li>The new event will appear on your personal calendar and be appropriately color coded:
+
+  <img src="https://hopehc.github.io/portfolio/project4/calendarcolors.png" alt="Calendar colors coded. Dark green = Archive. Dark blue = Blues. Pink = Conversion. Light green = Corrections. Purple = Reprints. Yellow = to printer.">
+
+
+
+  <img src="https://hopehc.github.io/portfolio/project4/calendar.png" alt="Personal calendar with various events assigned.">
+
+</li>
+</ul>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="https://hopehc.github.io/portfolio/post/project3/" data-toggle="tooltip" data-placement="top" title="Project 3: Automatically Generate Email Message (Simon &amp; Schuster)">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="https://hopehc.github.io/portfolio/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://hopehc.github.io/portfolio/tags/data-cleanup" title="data-cleanup">
+                            data-cleanup
+                        </a>
+                        
+                        
+                        
+                        <a href="https://hopehc.github.io/portfolio/tags/data-migration" title="data-migration">
+                            data-migration
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://hopehc.github.io/portfolio/tags/efficiency-tools" title="efficiency-tools">
+                            efficiency-tools
+                        </a>
+                        
+                        
+                        
+                        <a href="https://hopehc.github.io/portfolio/tags/google-scripts" title="google-scripts">
+                            google-scripts
+                        </a>
+                        
+                        
+                        
+                        <a href="https://hopehc.github.io/portfolio/tags/google-sheets" title="google-sheets">
+                            google-sheets
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    <li>
+                        <a href="mailto:hopeherrcard@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/hopehc">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/hope-herr-cardillo/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Hope Herr-Cardillo (they/them) 2020
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
