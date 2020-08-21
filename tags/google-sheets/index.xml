@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google Sheets on Hope Herr-Cardillo (they/them)</title>
+    <link>https://hopehc.github.io/portfolio/tags/google-sheets/</link>
+    <description>Recent content in Google Sheets on Hope Herr-Cardillo (they/them)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hopehc.github.io/portfolio/tags/google-sheets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Project 1: Title Management Sheet (Simon &amp; Schuster)</title>
+      <link>https://hopehc.github.io/portfolio/post/project1/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://hopehc.github.io/portfolio/post/project1/</guid>
+      <description>Project 1: Title Management Sheet (Simon &amp;amp; Schuster) Overview  Redesigned multi-sheet Google Sheets workbook used for tracking book production. Cleaned, reformatted, and migrated data. Added conditional formatting, data validation, and filter views. Created documentation and distributed to colleagues.  Click here to view the workbook.
+Documentation Expand/Contract Views You can now click the +/- symbols along the grey edge of the spreadsheet to expand orcontract your view. Because this is a shared document, this will change the view foreveryone trying to view the document, so use sparingly.</description>
+    </item>
+    
+    <item>
+      <title>Project 2: Title Assignments Sheet (Simon &amp; Schuster)</title>
+      <link>https://hopehc.github.io/portfolio/post/project2/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://hopehc.github.io/portfolio/post/project2/</guid>
+      <description> Project 2: Title Assignments Sheet (Simon &amp;amp; Schuster) Overview  Redesigned the sheet my supervisor uses to assign upcoming titles. (She loves Dwight Schrute.) Added conditional formatting, data validation, and filter views. Created Google Script that compiles the information and automatically generates email body text.  Click here to view the workbook.
+ </description>
+    </item>
+    
+    <item>
+      <title>Project 3: Automatically Generate Email Message (Simon &amp; Schuster)</title>
+      <link>https://hopehc.github.io/portfolio/post/project3/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://hopehc.github.io/portfolio/post/project3/</guid>
+      <description>Project 3: Automatically Generate Email Message (Simon &amp;amp; Schuster) Overview  Efficiency tool developed to reduce redundant work Includes six email templates that are automatically customized based on the assignment type, task completed, etc. Deployed from a shared spreadsheet and able to be used by multiple people at once  Documentation Select the entire row for a book and click on the colophon in the upper left to generate an auto-populated email draft.</description>
+    </item>
+    
+    <item>
+      <title>Project 4: Automatically Create Personal Calendar Event (Simon &amp; Schuster)</title>
+      <link>https://hopehc.github.io/portfolio/post/project4/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://hopehc.github.io/portfolio/post/project4/</guid>
+      <description>Project 4: Automatically Create Personal Calendar Event (Simon &amp;amp; Schuster) Overview  Efficiency tool developed to reduce redundant work Automatically creates all-day events based off of group project management sheet Color coded according to department standards  Documentation Link to personal calendar  To get started, send me your personal S&amp;amp;S Google Calendar ID. Click on the three dots next to your S&amp;amp;S Calendar, select &amp;ldquo;Settings and sharing.&amp;rdquo;    Scroll down until you see the &amp;ldquo;Integrate calendar&amp;rdquo; heading.</description>
+    </item>
+    
+  </channel>
+</rss>
